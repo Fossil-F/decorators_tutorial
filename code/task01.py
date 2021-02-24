@@ -7,3 +7,6 @@ def waste_time(number):
     for num in range(number):
         total += sum(n for n in range(num))
     return total
+
+var = waste_time(1000)
+print(var)

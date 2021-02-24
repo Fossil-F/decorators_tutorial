@@ -20,3 +20,5 @@ def random_greet(name="Emily"):
 @trace
 def greet_many(number):
     return [random_greet() for _ in range(number)]
+
+random_greet("Hussam")
