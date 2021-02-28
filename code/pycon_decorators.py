@@ -1,6 +1,8 @@
 import functools
 from time import time
 
+
+REGISTERED = {}
 def wrapper(func):
     """Template for decorators"""
 
@@ -52,3 +54,7 @@ def trace(func):
         return value
 
     return _trace
+
+def register(func):
+    REGISTERED[func.__name__] = func
+    return func

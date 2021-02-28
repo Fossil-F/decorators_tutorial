@@ -30,6 +30,7 @@ def robber_language(text):
 text = input("Please input a text: ")
 while True:
     print(f"Parsers: {', '.join(REGISTERED)}")
+    print(REGISTERED)
     parser = input("Choose a parser: ")
     if parser in REGISTERED:
         break
